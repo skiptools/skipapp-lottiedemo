@@ -1,7 +1,15 @@
 # LottieDemo
 
 This is a [Skip](https://skip.tools) dual-platform app project.
-It builds a native app for both iOS and Android.
+It builds a native app for both iOS and Android that renders
+an embedded Lottie JSON animation using
+the [SkipMotion](https://source.skip.tools/skip-motion) framework.
+
+<video id="intro_video" style="width: 100%" controls autoplay>
+  <source style="width: 100;" src="https://assets.skip.tools/videos/SkipMotionExample.mov" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 ## Building
 
