@@ -7,9 +7,7 @@
 import PackageDescription
 import Foundation
 
-// Set SKIP_ZERO=1 to build without Skip libraries
-let zero = ProcessInfo.processInfo.environment["SKIP_ZERO"] != nil
-let skipstone = !zero ? [Target.PluginUsage.plugin(name: "skipstone", package: "skip")] : []
+let skipstone = [Target.PluginUsage.plugin(name: "skipstone", package: "skip")]
 
 let package = Package(
     name: "skipapp-lottiedemo",
@@ -24,7 +22,7 @@ let package = Package(
         .package(url: "https://source.skip.tools/skip-motion.git", from: "0.0.0")
     ],
     targets: [
-        .target(name: "LottieDemo", dependencies: (zero ? [] : [.product(name: "SkipUI", package: "skip-ui"), .product(name: "SkipMotion", package: "skip-motion")]), resources: [.process("Resources")], plugins: skipstone),
-        .testTarget(name: "LottieDemoTests", dependencies: ["LottieDemo"] + (zero ? [] : [.product(name: "SkipTest", package: "skip")]), resources: [.process("Resources")], plugins: skipstone),
+        .target(name: "LottieDemo", dependencies: [.product(name: "SkipUI", package: "skip-ui"), .product(name: "SkipMotion", package: "skip-motion")], resources: [.process("Resources")], plugins: skipstone),
+        .testTarget(name: "LottieDemoTests", dependencies: ["LottieDemo", .product(name: "SkipTest", package: "skip")], resources: [.process("Resources")], plugins: skipstone),
     ]
 )
