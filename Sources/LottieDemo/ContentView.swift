@@ -8,8 +8,11 @@ import SwiftUI
 import Foundation
 import SkipMotion
 
-struct ContentView: View {
-    var body: some View {
+public struct ContentView: View {
+    public init() {
+    }
+    
+    public var body: some View {
         VStack(alignment: .center) {
             Text("Skip Motion Animation")
                 .font(.largeTitle)
