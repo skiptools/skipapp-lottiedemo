@@ -14,7 +14,7 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [.iOS(.v16), .macOS(.v13), .tvOS(.v16), .watchOS(.v9), .macCatalyst(.v16)],
     products: [
-        .library(name: "LottieDemo", type: .dynamic, targets: ["LottieDemo"]),
+        .library(name: "LottieDemoApp", type: .dynamic, targets: ["LottieDemo"]),
     ],
     dependencies: [
         .package(url: "https://source.skip.tools/skip.git", from: "0.7.13"),

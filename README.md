@@ -48,3 +48,14 @@ A build phases runs the "Launch Android APK" script that
 will deploy the transpiled app a running Android emulator or connected device.
 Logging output for the iOS app can be viewed in the Xcode console, and in
 Android Studio's logcat tab for the transpiled Kotlin app.
+
+## Project Structure
+
+This project was initialized with the command:
+
+```
+skip init --show-tree --icon-color='1abc9c' --appid=skip.lottie.demo.App --version 0.0.1 skipapp-lottiedemo LottieDemo:skip-motion/SkipMotion:skip-ui/SkipUI
+```
+
+
+
