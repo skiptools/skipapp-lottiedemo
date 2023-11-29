@@ -28,7 +28,7 @@ Installation prerequisites can be confirmed by running `skip checkup`.
 ## Testing
 
 The module can be tested using the standard `swift test` command
-or by running the test target for the macOS desintation in Xcode,
+or by running the test target for the macOS destination in Xcode,
 which will run the Swift tests as well as the transpiled
 Kotlin JUnit tests in the Robolectric Android simulation environment.
 
@@ -40,7 +40,7 @@ which will output a table of the test results for both platforms.
 Xcode and Android Studio must be downloaded and installed in order to
 run the app in the iOS simulator / Android emulator.
 An Android emulator must already be running, which can be launched from 
-Android Stuido's Device Manager.
+Android Studio's Device Manager.
 
 To run both the Swift and Kotlin apps simultaneously, 
 launch the LottieDemoApp target from Xcode.
