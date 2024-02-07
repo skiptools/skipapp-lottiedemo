@@ -101,7 +101,7 @@ listOf("Debug", "Release").forEach { buildType ->
 }
 
 dependencies {
-    implementation("lottie.demo:LottieDemo")
+    implementation(prop("ANDROID_PACKAGE_NAME") + ":" + prop("PRODUCT_NAME"))
 }
 
 kotlin {
