@@ -17,9 +17,9 @@ let package = Package(
         .library(name: "LottieDemoApp", type: .dynamic, targets: ["LottieDemo"]),
     ],
     dependencies: [
-        .package(url: "https://source.skip.tools/skip.git", from: "0.9.2"),
-        .package(url: "https://source.skip.tools/skip-ui.git", from: "0.10.0"),
-        .package(url: "https://source.skip.tools/skip-motion.git", from: "0.2.0")
+        .package(url: "https://source.skip.tools/skip.git", from: "0.9.4"),
+        .package(url: "https://source.skip.tools/skip-ui.git", from: "0.10.2"),
+        .package(url: "https://source.skip.tools/skip-motion.git", from: "0.3.0")
     ],
     targets: [
         .target(name: "LottieDemo", dependencies: [.product(name: "SkipUI", package: "skip-ui"), .product(name: "SkipMotion", package: "skip-motion")], resources: [.process("Resources")], plugins: skipstone),
