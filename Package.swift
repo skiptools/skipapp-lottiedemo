@@ -17,8 +17,8 @@ let package = Package(
         .library(name: "LottieDemoApp", type: .dynamic, targets: ["LottieDemo"]),
     ],
     dependencies: [
-        .package(url: "https://source.skip.tools/skip.git", from: "1.0.4"),
-        .package(url: "https://source.skip.tools/skip-ui.git", from: "1.0.0"),
+        .package(url: "https://source.skip.tools/skip.git", from: "1.4.0"),
+        .package(url: "https://source.skip.tools/skip-ui.git", from: "1.27.0"),
         .package(url: "https://source.skip.tools/skip-motion.git", "0.0.0"..<"2.0.0")
     ],
     targets: [
