@@ -1,3 +1,3 @@
-// Copyright 2023–2025 Skip
+// Copyright 2023–2026 Skip
 public class LottieDemoModule {
 }
